@@ -16,6 +16,11 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <!-- Google Fonts -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Alike&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -27,118 +32,128 @@
     <div class="content-wrapper">
       <nav>
         <ul>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" id="contact-button"> Contact Me</a></li>
         </ul>
       </nav>
-      <div class="Greetings">
+      <div>
       <h1>Hello, I'm Troy Richards.</h1>
       <h2> I am a Front End Developer that is stationed in Loganville, GA.</h2>
-      </div> <!--Greetings end -->
+      </div>
     </div> <!--Content wrapper end-->
   </header>
   
   <main>
-    <section class="projects">
+    <section id="projects">
       <div class="content-wrapper">
-      <h2>Projects</h2>
+      <h2 class="project-header">Projects</h2>
         <div class="project-area">
           <article> <!--Repo Gallery-->
-            <img src="" alt="Repo Gallery">
+            <figure>
+              <img src="" alt="Repo Gallery">
+            </figure>  
             <h3> Github Repo Gallery</h3>
-              <p>
+              <p class="project-description">
                 Uses GitHub's API to pull data from my GitHub portfolio
                 to create a gallery of repos. Vistors can click on each repo
                 to see more details and a link to the repo.
               </p>
-              <p>
+              <p class="project-skills">
                 <span>Skills:</span> JavaScript <br>
                 <span>Tools:</span> Rest API, Github Pages
               </p>
               <button class="live"> Live Page</button>
           </article> <!--Repo Gallery end-->
           <article> <!--Sticky Notes-->
-            <img src="" alt="Sticky Notes">
+            <figure>
+              <img src="" alt="Sticky Notes">
+            </figure>  
             <h3>Sticky Notes</h3>
-            <p>
+            <p class="project-description">
               Greenfield project creating a Sticky notes web app. Uses 
               mulitple components to build the classic sticky note UI with
               the ability to add, edit, delete, and search for notes.
             </p>
-            <p>
+            <p class="project-skills"> 
               <span>Skills:</span> React, JSX, Components <br>
               <span>Tools:</span> CodeSandbox, Props, State
             </p>
             <button class="live">Live Page</button>
           </article> <!-- Sticky Notes end-->
           <article> <!--Guess-The-Word-->
-            <img src="" alt="Guess-The-Word game" />
+            <figure>
+              <img src="" alt="Guess-The-Word game" />
+            </figure>
             <h3>Guess-The-Word</h3>
-            <p>
+            <p class="project-description">
               A game where players guess the word by entering one letter at a time. 
               if the player guesses the word correctly before running out of chances,
               they win and a promtped to play again.
             </p>
-            <p>
+            <p class="project-skills">
               <span>Skills:</span> JavaScript <br>
               <span>Tools:</span> Github Pages, JSON
             </p>
             <button class="live">Live Page</button>
           </article> <!--Guess-The-Word end-->
           <article> <!--Unplugged-->
-            <img src="" alt="unplugged">
+            <figure>
+              <img src="" alt="unplugged">
+            </figure>  
             <h3>UnPlugged</h3>
-            <p>
+            <p class="project-description">
               A mulit-page responsive website coded with Flexbox. This 
               versatile design has several sections, including a Cards design
               pattern, that can be repurposed for different sites.
             </p>
-            <p>
-              <span>Skills:</span> HTML, CSS, Flexbox
+            <p class="project-skills">
+              <span>Skills:</span> HTML, CSS, Flexbox <br>
               <span>Tools:</span> Photoshop, Chrome DevTools, Github Pages
             </p>
             <button class="live">Live Button</button>
           </article> <!--Unplugged end-->
           <article> <!--Nametag-->
-            <img src="" alt="Nametag UI">
+            <figure>
+              <img src="" alt="Nametag UI">
+            </figure>  
             <h3> Nametag Generator</h3>
-            <p>
+            <p class="project-description">
               Greenfield project creating a Nametag web app. A UI that 
               has the ability to create and delete nametags. 
             </p>
-            <p>
-              <span>Skills:</span> React, JSX, Components
+            <p class="project-skills">
+              <span>Skills:</span> React, JSX, Components <br>
               <span>Tools:</span> CodeSandbox, Props, State
             </p>
-            <button class="live">Live Page</button>
+            <button id="last-live">Live Page</button>
           </article> <!--Nametag end-->
         </div> <!--Project-area end-->
       </div> <!--Content wrapper end-->
     </section> <!--Projects end-->
 
-    <section class="skills">
+    <section id="skills">
         <div class="content-wrapper">
-          <h2>Skills</h2>
-          <h3>Developer Skills</h3>
+          <h2 class="skills-header">Skills</h2>
+          <h3 class="skills-subheader">Developer Skills</h3>
           <div class="skills-wrap">
-            <p class="skill-types">HTML and CSS</p>
-            <p class="skill-types">JavaScript</p>
-            <p class="skill-types">React</p>
-            <p class="skill-types">Responsive Web Development</p>
-            <p class="skill-types">Git and GitHub</p>
+            <p class="skill">HTML and CSS</p>
+            <p class="skill">JavaScript</p>
+            <p class="skill">React</p>
+            <p class="skill">Responsive Web Development</p>
+            <p class="skill">Git and GitHub</p>
           </div>
-          <h3>Tech Stack</h3>  
-          <div class="skills-wrap">
-            <p class="skill-types">Chrome DevTools</p>
-            <p class="skill-types">Github Pages</p>
-            <p class="skill-types">Photoshop</p>
+          <h3 class="tool-subheader">Tech Stack</h3>  
+          <div class="tools-wrap">
+            <p class="tool">Chrome DevTools</p>
+            <p class="tool">Github Pages</p>
+            <p class="tool">Photoshop</p>
           </div>
         </div> <!--Content-wrapper end-->
     </section> <!--Skills end-->
 
-    <section class="about">
+    <section id="about">
       <div class="content-wrapper">
       <article>
         <figure>
@@ -160,11 +175,11 @@
     </section> <!-- About end-->
   </main> <!--Main wrapper end-->
 
-  <footer>
+  <footer id="contact">
     <div class="content-wrapper">
       <h1>Let's Connect</h1>
       <div class="footer-content">
-        <div class="contact">
+        <div class="hire-me">
           <h3> Hire Me</h3>
           <address>
             <p>

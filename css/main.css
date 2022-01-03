@@ -87,6 +87,196 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+span {
+  font-weight: bold;
+}
+
+header,
+#skills,
+footer {
+  background-color: #e8eff7;
+}
+
+header,
+footer,
+#skills,
+#about,
+#projects {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap
+}
+
+
+
+.content-wrapper {
+  width: 90%;
+}
+
+/* Header */
+
+header {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+
+header nav ul {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+nav ul li {
+  font-weight: bold;
+}
+
+nav #contact-button {
+  background-color: #f8d697;
+  border-radius: 30px;
+  padding: 10px 10px
+}
+
+header h2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+/* Projects */
+
+.project-header {
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.project-area h3 {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.project-description {
+  padding-bottom: 30px;
+}
+
+.project-skills {
+  padding-bottom: 40px;
+}
+
+.live {
+  margin-bottom: 40px
+}
+
+#last-live {
+  margin-bottom: 60px;
+}
+
+.project-area {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+/* Skills */
+
+.skills-header {
+  padding-top: 60px;
+}
+
+.skills-subheader,
+.tool-subheader {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.skills-wrap {
+  display: block;
+}
+
+.skill {
+  background-color: #ffcd71;
+  padding: 15px 0px;
+}
+
+.tools-wrap {
+  display: block;
+  padding-bottom: 80px;
+}
+
+.tool {
+  background-color: #ffcd71;
+  padding: 15px 0px;
+}
+
+/* About */
+
+#about {
+  padding-top: 80px;
+}
+
+#about h1 {
+  padding-top: 40px;
+  padding-bottom: 60px
+}
+
+#about h2 {
+  padding-bottom: 40px;
+}
+
+#about p {
+  padding-bottom: 80px;
+}
+
+/* Footer */
+
+#contact {
+  padding-top: 80px;
+}
+
+#contact h1 {
+  padding-bottom: 60px;
+}
+
+#contact h3 {
+  padding-bottom: 30px;
+}
+
+.hire-me,
+.social,
+.location,
+.copyright {
+  padding-bottom: 60px;
+}
+
+
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
