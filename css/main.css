@@ -98,6 +98,25 @@ body {
   color: black;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Alike', serif;
+  color: black;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.45rem;
+}
+
 ul,
 ol {
   list-style-type: none;
@@ -112,6 +131,15 @@ a {
 
 span {
   font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+  width: 100%;
+  margin: 0;
 }
 
 header,
@@ -164,6 +192,7 @@ nav #contact-button {
 }
 
 header h2 {
+  font-weight: lighter;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -172,6 +201,7 @@ header h2 {
 /* Projects */
 
 .project-header {
+  font-size: 2.34rem;
   padding-top: 80px;
   padding-bottom: 20px;
 }
@@ -189,20 +219,38 @@ header h2 {
   padding-bottom: 40px;
 }
 
-.live {
-  margin-bottom: 40px
+figure {
+  padding: 20px 0px;
 }
 
-#last-live {
-  margin-bottom: 60px;
-}
 
 .project-area {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row wrap;
 }
+
+.project-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-area p {
+  text-align: left;
+}
+
+#projects a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: #453E4F;
+  color: white;
+  border-radius: 30px;
+  padding: 0.75rem 0;
+  margin: 40px 0;
+}
+
 
 /* Skills */
 
@@ -216,9 +264,6 @@ header h2 {
   padding-bottom: 20px;
 }
 
-.skills-wrap {
-  display: block;
-}
 
 .skill {
   background-color: #ffcd71;
@@ -226,18 +271,22 @@ header h2 {
 }
 
 .tools-wrap {
-  display: block;
   padding-bottom: 80px;
 }
+
 
 .tool {
   background-color: #ffcd71;
   padding: 15px 0px;
+  margin: 20px 0;
 }
+
+
 
 /* About */
 
 #about {
+  width: 100%;
   padding-top: 80px;
 }
 
@@ -261,7 +310,7 @@ header h2 {
 }
 
 #contact h1 {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
 }
 
 #contact h3 {
@@ -272,7 +321,24 @@ header h2 {
 .social,
 .location,
 .copyright {
-  padding-bottom: 60px;
+  padding-bottom: 50px;
+}
+
+
+
+footer h3 {
+  font-weight: lighter;
+}
+
+
+.social-icons {
+  padding: 0px 1.23rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-icons i {
+  font-size: 2.4rem;
 }
 
 
@@ -365,8 +431,191 @@ header h2 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+/* Tablet styles */
+
+/* General */
+
+.content-wrapper {
+  max-width: 640px;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+nav ul {
+  font-size: 1rem;
+}
+
+/* Header */
+
+header h1 {
+  padding: 40px 0px;
+}
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.header-greeting {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* Projects */
+
+.project-area {
+justify-content: space-around;
+}
+
+.project-item {
+  width: 45%;
+}
+
+.project-header {
+  font-size: 3.75rem;
+}
+
+/* Skills */
+
+.skill, 
+.tool {
+  width: 45%;
+  text-transform: uppercase;
+}
+
+.skills-wrap,
+.tools-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+/* About */
+
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about h2,
+#about p {
+  text-align: left;
+}
+
+
+
+/* Footer */
+
+.footer-content {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.social,
+.hire-me,
+.location {
+  width: 33%;
+}
+
+.social-icons i {
+  padding: 0;
+}
+
+}
+
+@media only screen and (min-width: 1200px) { 
+/* Desktop */
+
+/* Gerenal */
+
+.content-wrapper {
+  max-width: 1450px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* Header */
+
+header .content-wrapper {
+justify-content: flex-end;
+}
+
+header nav {
+  justify-content: flex-end;
+  width: 50%;
+}
+
+nav ul {
+  justify-content: flex-end;
+  width: 80%;
+}
+
+.header-greeting {
+  width: 95%;
+  flex-flow: row wrap;
+}
+
+/* Projects */
+
+.project-item {
+  width: 30%;
+}
+
+/* Skiils */
+
+#skills .content-wrapper {
+  max-width: 900px;
+}
+
+/* About */
+
+.about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description {
+  width: 50%;
+}
+
+#about figure {
+  width: 35%;
+}
+
 }
 
 @media print,

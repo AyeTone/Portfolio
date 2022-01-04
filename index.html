@@ -15,6 +15,10 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
+ 
+  <!-- Icon Fonts-->
+
+  <script src="https://kit.fontawesome.com/818a096d7c.js" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
 
@@ -38,9 +42,12 @@
           <li><a href="#contact" id="contact-button"> Contact Me</a></li>
         </ul>
       </nav>
-      <div>
+      <div class="header-greeting">
       <h1>Hello, I'm Troy Richards.</h1>
-      <h2> I am a Front End Developer that is stationed in Loganville, GA.</h2>
+      <h2> 
+        I am a Front End Developer that is stationed in Loganville, GA that creates
+        eye catching websites. 
+      </h2>
       </div>
     </div> <!--Content wrapper end-->
   </header>
@@ -50,9 +57,11 @@
       <div class="content-wrapper">
       <h2 class="project-header">Projects</h2>
         <div class="project-area">
-          <article> <!--Repo Gallery-->
+          <article class="project-item"> <!--Repo Gallery-->
             <figure>
-              <img src="" alt="Repo Gallery">
+              <a href="https://ayetone.github.io/github-repo-gallery/" target="_blank">
+                <img src="img/repo-gallery.png" alt="Repo Gallery">
+              </a>  
             </figure>  
             <h3> Github Repo Gallery</h3>
               <p class="project-description">
@@ -64,11 +73,15 @@
                 <span>Skills:</span> JavaScript <br>
                 <span>Tools:</span> Rest API, Github Pages
               </p>
-              <button class="live"> Live Page</button>
+              <a href="https://ayetone.github.io/github-repo-gallery/" target="_blank">
+                Live page
+              </a>
           </article> <!--Repo Gallery end-->
-          <article> <!--Sticky Notes-->
+          <article class="project-item"> <!--Sticky Notes-->
             <figure>
-              <img src="" alt="Sticky Notes">
+              <a href="https://codesandbox.io/s/sticky-notes-gen-6vl2y" target="_blank">
+                <img src="img/notes.png" alt="Sticky Notes">
+              </a>  
             </figure>  
             <h3>Sticky Notes</h3>
             <p class="project-description">
@@ -80,11 +93,15 @@
               <span>Skills:</span> React, JSX, Components <br>
               <span>Tools:</span> CodeSandbox, Props, State
             </p>
-            <button class="live">Live Page</button>
+            <a href="https://codesandbox.io/s/sticky-notes-gen-6vl2y" target="_blank">
+            Live Page
+            </a>
           </article> <!-- Sticky Notes end-->
-          <article> <!--Guess-The-Word-->
+          <article class="project-item"> <!--Guess-The-Word-->
             <figure>
-              <img src="" alt="Guess-The-Word game" />
+              <a href="https://ayetone.github.io/guess-the-word/" target="_blank">
+                <img src="img/word-guess.png" alt="Guess-The-Word game" />
+              </a>
             </figure>
             <h3>Guess-The-Word</h3>
             <p class="project-description">
@@ -96,11 +113,15 @@
               <span>Skills:</span> JavaScript <br>
               <span>Tools:</span> Github Pages, JSON
             </p>
-            <button class="live">Live Page</button>
+            <a href="https://ayetone.github.io/guess-the-word/" target="_blank">
+            Live Page
+            </a>
           </article> <!--Guess-The-Word end-->
-          <article> <!--Unplugged-->
+          <article class="project-item"> <!--Unplugged-->
             <figure>
-              <img src="" alt="unplugged">
+              <a href="https://ayetone.github.io/responsive-unplugged-retreat/" target="_blank">
+                <img src="img/unplugged.png" alt="unplugged">
+              </a>  
             </figure>  
             <h3>UnPlugged</h3>
             <p class="project-description">
@@ -112,11 +133,15 @@
               <span>Skills:</span> HTML, CSS, Flexbox <br>
               <span>Tools:</span> Photoshop, Chrome DevTools, Github Pages
             </p>
-            <button class="live">Live Button</button>
+            <a href="https://ayetone.github.io/responsive-unplugged-retreat/" target="_blank">
+             Live Page
+            </a>
           </article> <!--Unplugged end-->
-          <article> <!--Nametag-->
+          <article class="project-item"> <!--Nametag-->
             <figure>
-              <img src="" alt="Nametag UI">
+              <a href="https://codesandbox.io/s/nametag-gen-czw9y" target="_blank">
+                <img src="img/nametag.png" alt="Nametag UI">
+              </a>
             </figure>  
             <h3> Nametag Generator</h3>
             <p class="project-description">
@@ -127,7 +152,9 @@
               <span>Skills:</span> React, JSX, Components <br>
               <span>Tools:</span> CodeSandbox, Props, State
             </p>
-            <button id="last-live">Live Page</button>
+            <a href="https://codesandbox.io/s/nametag-gen-czw9y" target="_blank">
+            Live Page
+            </a>
           </article> <!--Nametag end-->
         </div> <!--Project-area end-->
       </div> <!--Content wrapper end-->
@@ -155,11 +182,11 @@
 
     <section id="about">
       <div class="content-wrapper">
-      <article>
+      <div class="about-wrapper">
         <figure>
-          <img src="" alt="Troy Richards">
+          <img src="img/troy-richards.png" alt="Troy Richards">
         </figure>
-        <div>
+        <div class="about-description">
           <h1>Hello, I'm Troy Richards</h1>
           <h2> I am currently looking for a position as a Front End Developer.</h2>
           <p> 
@@ -170,7 +197,7 @@
             those actions, I found myself a new passion with learning how to code.
           </p>
         </div>
-      </article>  
+      </div> <!-- About wrapper end-->  
       </div> <!--Content Wrapper end-->
     </section> <!-- About end-->
   </main> <!--Main wrapper end-->
@@ -183,8 +210,8 @@
           <h3> Hire Me</h3>
           <address>
             <p>
-              phone: 678-622-6762 <br>
-              email(preferred method): troyrichards28@gmail.com
+              678-622-6762 <br>
+              troyrichards28@gmail.com
             </p>
           </address>
         </div> <!--contact end-->
@@ -193,13 +220,13 @@
           <h3> Follow me</h3>
           <div class="social-icons">
             <p>
-              <a href=""></a>
+              <a href="https://www.linkedin.com/in/troyrichardstonebeats/" target="_blank"><i class="fab fa-linkedin"></i></a>
             </p>
             <p>
-              <a href=""></a>
+              <a href="https://github.com/AyeTone" target="_blank"><i class="fab fa-github"></i></a>
             </p>
             <p>
-              <a href=""></a>
+              <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter"></i></a>
             </p>
           </div> <!--Social-Icons end-->
         </div> <!--Social end-->
