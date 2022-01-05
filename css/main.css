@@ -145,7 +145,7 @@ figure {
 header,
 #skills,
 footer {
-  background-color: #e8eff7;
+  background: linear-gradient(45deg, #e8f7ec, #cce1f8) ;
 }
 
 header,
