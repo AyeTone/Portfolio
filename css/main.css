@@ -191,6 +191,12 @@ nav #contact-button {
   padding: 10px 10px
 }
 
+.nav-item:hover {
+  background-color: #fce4b7;
+  border-radius: 20px;
+  padding: 10px 10px
+}
+
 header h2 {
   font-weight: lighter;
   padding-top: 30px;
