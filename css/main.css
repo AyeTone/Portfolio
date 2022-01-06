@@ -543,6 +543,12 @@ justify-content: space-around;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  display: flex;
+  flex-flow: row wrap
 }
 
 .social,
