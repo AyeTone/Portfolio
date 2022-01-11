@@ -162,7 +162,8 @@ footer,
 
 
 .content-wrapper {
-  width: 90%;
+  width: 100%;
+  margin: auto;
 }
 
 /* Header */
@@ -191,10 +192,28 @@ nav #contact-button {
   padding: 10px 10px
 }
 
-.nav-item:hover {
-  background-color: #fce4b7;
+nav #contact-button:hover {
+  animation: show .25s;
+  animation-fill-mode: forwards
+}
+
+.nav-item {
   border-radius: 20px;
   padding: 10px 10px
+}
+
+.nav-item:hover {
+ animation: show .25s;
+ animation-fill-mode: both;
+}
+
+@keyframes show {
+  0% {
+    background-color: none;
+  }
+  100% {
+    background-color: #ffcb6b;
+  }
 }
 
 header h2 {
@@ -460,6 +479,10 @@ h3 {
 
 nav ul {
   font-size: 1rem;
+}
+
+img {
+  max-width:fit-content;
 }
 
 /* Header */
