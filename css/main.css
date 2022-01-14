@@ -170,35 +170,13 @@ header {
   padding-bottom: 60px;
 }
 
-.bar {
-  border-style: none;
-  background: none;
-  font-size: 2rem;
-  text-shadow: 2px 3px 5px grey;
-}
-
-.dropdown {
-  position: sticky;
-  top: 10px;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-content {
-  position: absolute;
-  top: calc(100% + .30rem);
-}
-
 nav {
-  background: white;
-  box-shadow: 4px 7px 5px rgba(0, 0, 0, .3);
-  visibility: hidden;
-  opacity: 0;
-  transition: ;
+  margin-bottom: 30px;
 }
 
-nav:checked {
-  
+nav ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul li {
@@ -207,11 +185,29 @@ nav ul li {
   font-weight: bold;
 }
 
+.nav-item {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.nav-item:hover {
+  background-color: #f8ca75;
+}
+
+#contact-button {
+  background-color: #f8d697;
+
+}
 
 header h2 {
   font-weight: lighter;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.header-greeting {
+  max-width: 80%;
 }
 
 
@@ -486,9 +482,8 @@ header h1 {
 }
 
 nav {
-  width: 100%;
+  max-width: 100%;
 }
-
 
 
 /*    Projects     */
@@ -582,6 +577,10 @@ h2 {
 
 
 /*    Header     */   
+nav ul {
+  justify-content: right;
+}
+
 .header-greeting {
   width: 95%;
   flex-flow: row wrap;
