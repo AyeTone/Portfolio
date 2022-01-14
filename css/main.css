@@ -145,7 +145,7 @@ figure {
 header,
 #skills,
 footer {
-  background: linear-gradient(45deg, #e8f7ec, #cce1f8) ;
+  background: linear-gradient(45deg, #c6e7cf, #cce1f8) ;
 }
 
 header,
@@ -159,11 +159,8 @@ footer,
   flex-flow: row wrap
 }
 
-
-
 .content-wrapper {
   width: 90%;
-
 }
 
 /* Header */
@@ -173,48 +170,43 @@ header {
   padding-bottom: 60px;
 }
 
+.bar {
+  border-style: none;
+  background: none;
+  font-size: 2rem;
+  text-shadow: 2px 3px 5px grey;
+}
 
-header nav ul {
-  text-transform: uppercase;
+.dropdown {
+  position: sticky;
+  top: 10px;
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 60px;
-  padding-top: 30px;
+  justify-content: flex-end;
+}
+
+.nav-content {
+  position: absolute;
+  top: calc(100% + .30rem);
+}
+
+nav {
+  background: white;
+  box-shadow: 4px 7px 5px rgba(0, 0, 0, .3);
+  visibility: hidden;
+  opacity: 0;
+  transition: ;
+}
+
+nav:checked {
+  
 }
 
 nav ul li {
+  padding: 10px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
-nav #contact-button {
-  background-color: #f8d697;
-  border-radius: 30px;
-  padding: 10px 10px
-}
-
-nav #contact-button:hover {
-  animation: show .25s;
-  animation-fill-mode: forwards
-}
-
-.nav-item {
-  border-radius: 20px;
-  padding: 10px 10px
-}
-
-.nav-item:hover {
- animation: show .25s;
- animation-fill-mode: both;
-}
-
-@keyframes show {
-  0% {
-    background-color: none;
-  }
-  100% {
-    background-color: #ffcb6b;
-  }
-}
 
 header h2 {
   font-weight: lighter;
@@ -260,6 +252,11 @@ figure {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+.project-image {
+  width: 200px;
+  height: 200px;
 }
 
 .project-area p {
@@ -457,12 +454,12 @@ footer h3 {
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-/* Tablet styles */
+/*        Tablet styles        */
 
-/* General */
 
+/*    General    */
 .content-wrapper {
-  max-width: 640px;
+  max-width: 700px;
 }
 
 h1 {
@@ -481,42 +478,20 @@ nav ul {
   font-size: 1rem;
 }
 
-img {
-  max-width:fit-content;
-}
 
-/* Header */
 
+/*    Header     */
 header h1 {
   padding: 40px 0px;
 }
 
-header .content-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-header nav {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
+nav {
   width: 100%;
 }
 
-.header-greeting {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
 
-/* Projects */
 
+/*    Projects     */
 .project-area {
 justify-content: space-around;
 }
@@ -529,8 +504,9 @@ justify-content: space-around;
   font-size: 3.75rem;
 }
 
-/* Skills */
 
+
+/*    Skills     */
 .skill, 
 .tool {
   width: 45%;
@@ -545,8 +521,9 @@ justify-content: space-around;
   flex-flow: row wrap;
 }
 
-/* About */
 
+
+/*    About    */
 .about-wrapper {
   display: flex;
   justify-content: center;
@@ -560,8 +537,7 @@ justify-content: space-around;
 
 
 
-/* Footer */
-
+/*    Footer     */
 .footer-content {
   display: flex;
   flex-flow: row wrap;
@@ -587,10 +563,10 @@ justify-content: space-around;
 }
 
 @media only screen and (min-width: 1200px) { 
-/* Desktop */
+/*      Desktop        */
 
-/* Gerenal */
 
+/*    Gerenal    */
 .content-wrapper {
   max-width: 1450px;
 }
@@ -603,41 +579,31 @@ h2 {
   font-size: 2rem;
 }
 
-/* Header */
 
-header .content-wrapper {
-justify-content: flex-end;
-}
 
-header nav {
-  justify-content: flex-end;
-  width: 50%;
-}
-
-nav ul {
-  justify-content: flex-end;
-  width: 80%;
-}
-
+/*    Header     */   
 .header-greeting {
   width: 95%;
   flex-flow: row wrap;
 }
 
-/* Projects */
 
+
+/*    Projects     */
 .project-item {
   width: 30%;
 }
 
-/* Skiils */
 
+
+/*    Skiils     */
 #skills .content-wrapper {
   max-width: 900px;
 }
 
-/* About */
 
+
+/*    About    */
 .about-wrapper {
   display: flex;
   justify-content: space-between;
@@ -650,7 +616,6 @@ nav ul {
 #about figure {
   width: 35%;
 }
-
 }
 
 @media print,
