@@ -22,11 +22,7 @@
 
   <!-- Google Fonts -->
 
-  <link href="https://fonts.googleapis.com/css2?family=Alike&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -35,41 +31,56 @@
 </head>
 
 <body>
+
+  <!--      Navbar      -->
+
+  <nav>
+    <div class="content-wrapper">
+      <ul>
+        <li><a href="#projects" class="nav-item"><i class="fas fa-code"></i> Projects</a></li>
+        <li><a href="#skills" class="nav-item"><i class="fas fa-tasks"></i> Skills</a></li>
+        <li><a href="#about" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#contact" class="nav-item"> <i class="fas fa-address-card"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--      Header      -->
+
   <header>
     <div class="content-wrapper">
-        <div class="nav-content">   
-          <nav>
-            <ul>
-              <li><a href="#projects" class="nav-item">Projects</a></li>
-              <li><a href="#skills" class="nav-item">Skills</a></li>
-              <li><a href="#about" class="nav-item">About</a></li>
-              <li><a href="#contact" class="nav-item"id="contact-button"> Contact Me</a></li>
-            </ul>
-          </nav>
-        </div>  
-      </div>
-      <div class="header-greeting">
-      <h1>Hello, I'm Troy Richards.</h1>
-      <h2> 
-        I am a Front End Developer stationed in Loganville, GA, always creating
-        eye-catching websites wherever I go.
-      </h2>
-      </div>
+      <div class="header-content">
+          <h1><span class="hello">Hello</span>, and <span>W</span>elcome</h1>
+          <h3> 
+            My name is Troy Richards and I am a Frontend Developer that strives to make attractive 
+            websites. This is my portfolio page that I have built from the ground up. <span>Take a look!</span>
+          </h3>
+        </div>
+      </div> <!--  header-content -->
     </div> <!--Content wrapper end-->
   </header>
+
   
   <main>
+    <!--      Projects      -->
+
     <section id="projects">
       <div class="content-wrapper">
-      <h2 class="project-header">Projects</h2>
+      <h2 class="projects-header">Projects</h2>
+      <p class="projects-subtitle">
+        Just a few of the projects I have work on...
+      </p>
+
         <div class="project-area">
-          <article class="project-item"> <!--Repo Gallery-->
+
+          <!--    Repo Gallery    -->
+          <article class="project-item"> 
             <figure>
               <a href="https://ayetone.github.io/github-repo-gallery/" target="_blank">
                 <img class="" src="img/repo-gallery.png" alt="Repo Gallery">
               </a>  
             </figure>  
-            <h3> Github Repo Gallery</h3>
+            <h3> <span>G</span>itHub <span>R</span>epo <span>G</span>allery</h3>
               <p class="project-description">
                 Uses GitHub's API to pull data from my GitHub portfolio
                 to create a gallery of repos. Visitors can click on each repo
@@ -79,17 +90,19 @@
                 <span>Skills:</span> JavaScript <br>
                 <span>Tools:</span> Rest API, Github Pages
               </p>
-              <a href="https://ayetone.github.io/github-repo-gallery/" target="_blank">
+              <a class="project-link" href="https://ayetone.github.io/github-repo-gallery/" target="_blank">
                 Live page
               </a>
-          </article> <!--Repo Gallery end-->
-          <article class="project-item"> <!--Sticky Notes-->
+          </article>
+
+          <!--    Sticky Notes    -->
+          <article class="project-item"> 
             <figure>
               <a href="https://6vl2y.csb.app/" target="_blank">
                 <img class="" src="img/notes.png" alt="Sticky Notes">
               </a>  
             </figure>  
-            <h3>Sticky Notes</h3>
+            <h3><span>S</span>ticky <span>N</span>otes</h3>
             <p class="project-description">
               Greenfield project creating a Sticky notes web app. Uses 
               multiple components to build the classic sticky note UI with
@@ -99,17 +112,19 @@
               <span>Skills:</span> React, JSX, Components <br>
               <span>Tools:</span> CodeSandbox, Props, State
             </p>
-            <a href="https://6vl2y.csb.app/" target="_blank">
+            <a class="project-link" href="https://6vl2y.csb.app/" target="_blank">
             Live Page
             </a>
-          </article> <!-- Sticky Notes end-->
-          <article class="project-item"> <!--Guess-The-Word-->
+          </article>
+
+          <!--    Guess-The-Word    -->
+          <article class="project-item"> 
             <figure>
-              <a href="https://ayetone.github.io/guess-the-word/" target="_blank">
+              <a class="project-link" href="https://ayetone.github.io/guess-the-word/" target="_blank">
                 <img class="" src="img/word-guess.png" alt="Guess-The-Word game" />
               </a>
             </figure>
-            <h3>Guess-The-Word</h3>
+            <h3><span>G</span>uess-<span>T</span>he-<span>W</span>ord</h3>
             <p class="project-description">
               A game where players guess the word by entering one letter at a time. 
               If the player guesses the word correctly before running out of chances,
@@ -119,17 +134,19 @@
               <span>Skills:</span> JavaScript <br>
               <span>Tools:</span> Github Pages, JSON
             </p>
-            <a href="https://ayetone.github.io/guess-the-word/" target="_blank">
+            <a class="project-link" href="https://ayetone.github.io/guess-the-word/" target="_blank">
             Live Page
             </a>
-          </article> <!--Guess-The-Word end-->
-          <article class="project-item"> <!--Unplugged-->
+          </article> 
+
+          <!--    Unplugged   -->
+          <article class="project-item"> 
             <figure>
               <a href="https://ayetone.github.io/responsive-unplugged-retreat/" target="_blank">
                 <img class="" src="img/unplugged.png" alt="unplugged">
               </a>  
             </figure>  
-            <h3>UnPlugged</h3>
+            <h3><span>U</span>nPlugged</h3>
             <p class="project-description">
               A multi-page responsive website coded with Flexbox. This 
               versatile design has several sections, including a cards design
@@ -139,17 +156,19 @@
               <span>Skills:</span> HTML, CSS, Flexbox <br>
               <span>Tools:</span> Photoshop, Chrome DevTools, Github Pages
             </p>
-            <a href="https://ayetone.github.io/responsive-unplugged-retreat/" target="_blank">
+            <a class="project-link" href="https://ayetone.github.io/responsive-unplugged-retreat/" target="_blank">
              Live Page
             </a>
-          </article> <!--Unplugged end-->
-          <article class="project-item"> <!--Nametag-->
+          </article>
+
+          <!--    Nametag   -->
+          <article class="project-item"> 
             <figure>
               <a href="https://czw9y.csb.app/" target="_blank">
                 <img class="" src="img/nametag.png" alt="Nametag UI">
               </a>
             </figure>  
-            <h3> Nametag Generator</h3>
+            <h3> <span>N</span>ametag <span>G</span>enerator</h3>
             <p class="project-description">
               Greenfield project creating a Nametag web app. A UI that 
               has the ability to create and delete nametags. 
@@ -158,10 +177,11 @@
               <span>Skills:</span> React, JSX, Components <br>
               <span>Tools:</span> CodeSandbox, Props, State
             </p>
-            <a href="https://czw9y.csb.app/" target="_blank">
+            <a class="project-link" href="https://czw9y.csb.app/" target="_blank">
             Live Page
             </a>
-          </article> <!--Nametag end-->
+          </article>
+          
         </div> <!--Project-area end-->
       </div> <!--Content wrapper end-->
     </section> <!--Projects end-->
@@ -169,7 +189,7 @@
     <section id="skills">
         <div class="content-wrapper">
           <h2 class="skills-header">Skills</h2>
-          <h3 class="skills-subheader">Developer Skills</h3>
+          <h3 class="skills-subheader"><span>D</span>eveloper <span>S</span>kills</h3>
           <div class="skills-wrap">
             <p class="skill">HTML and CSS</p>
             <p class="skill">JavaScript</p>
@@ -177,7 +197,7 @@
             <p class="skill">Responsive Web Development</p>
             <p class="skill">Git and GitHub</p>
           </div>
-          <h3 class="tool-subheader">Tech Stack</h3>  
+          <h3 class="tool-subheader"><span>T</span>ech <span>S</span>tack</h3>  
           <div class="tools-wrap">
             <p class="tool">Chrome DevTools</p>
             <p class="tool">Github Pages</p>
@@ -190,11 +210,11 @@
       <div class="content-wrapper">
       <div class="about-wrapper">
         <figure>
-          <img class="img-responsive" src="img/troy-richards.png" alt="Troy Richards">
+          <img class="selfie" src="img/troy-richards.png" alt="Troy Richards">
         </figure>
         <div class="about-description">
-          <h1>Hello, I'm Troy Richards</h1>
-          <h2> I am currently looking for a position as a Front End Developer.</h2>
+          <h1><span>Hello</span>, I'm Troy Richards</h1>
+          <h2> I am currently looking for a position as a <span>F</span>rontend <span>D</span>eveloper.</h2>
           <p> 
             From a young age, I've always been a very heavy gamer. It was, and still somewhat is, 
             one of my favorite pass time activities. This hobby of mine led me to be very interested in the tech
@@ -213,7 +233,7 @@
       <h1>Let's Connect</h1>
       <div class="footer-content">
         <div class="hire-me">
-          <h3> Hire Me</h3>
+          <h3> Get it touch</h3>
           <address>
             <p>
               678-622-6762 <br>
