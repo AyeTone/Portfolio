@@ -245,11 +245,20 @@ main {
 }
 
 .project-item figure {
+  transition: width .25s ease-in-out, box-shadow .4s ease-in-out;
   box-shadow: 10px 7px 12px var(--box-shadow-color), 
   -6px -6px 23px var(--box-shadow-color);
 }
 
- figure img {
+.project-item figure:hover {
+  width: 110%;
+  z-index: 1;
+  box-shadow: 10px 7px 12px var(--seconday-color),
+  -6px -6px 23px var(--seconday-color) ;
+}
+
+
+figure img {
   max-width: 100%;
 }
 
