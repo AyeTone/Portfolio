@@ -89,6 +89,11 @@ textarea {
 
 /* General Styles */
 
+
+html {
+  box-sizing: border-box;
+}
+
 :root {
   --main-bg: rgb(235, 235, 235);
   --secondary-bg:rgba(228, 228, 228, 0.788);
@@ -145,10 +150,9 @@ footer,
 }
 
 .content-wrapper {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
-
 
 /*      Navbar      */
 nav {
@@ -158,6 +162,17 @@ nav {
   padding-bottom: 20px;
   background: var(--main-bg);
   box-shadow: 0px 10px 60px var(--box-shadow-color);
+} 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-home {
+  display: none;
+  font-size: 1.75rem;;
 }
 
 nav ul {
@@ -188,16 +203,32 @@ nav ul li {
 
 /*       Header      */
 header {
-  margin: 10em 0;
-  padding: 0 0 12em 0;
+  height: 100vh;
+  padding-top: 8em;
 }
+
 
 .hello {
   font-size: 1.5em;
+  animation: load 1.3s;
 }
+
 
 .greeting span.hello {
   font-size: 1.5em;
+}
+
+.greeting span.hello:hover {
+  animation: load .2s ease-in-out forwards;
+}
+
+@keyframes load {
+  0%{
+    transform: translateY(-10px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
 }
 
 header h3 {
@@ -257,7 +288,6 @@ main {
   -6px -6px 23px var(--seconday-color) ;
 }
 
-
 figure img {
   max-width: 100%;
 }
@@ -283,9 +313,10 @@ figure img {
 }
 
 .project-item {
-  width: 100%;
+  width: 70%;
   display: flex;
   flex-direction: column;
+  height: inherit;
 }
 
 .project-area p {
@@ -312,7 +343,7 @@ figure img {
   color: var(--seconday-color);
   text-shadow: 2px 3px 23px grey;
   padding-top: 60px;
-  margin-bottom:0;
+  margin-bottom: 0;
 }
 
 .skills-subheader,
@@ -351,12 +382,18 @@ figure img {
 }
 
 .selfie {
-  width: 100%;
+  max-width: 100%;
 }
 
 #about h1 {
   padding-top: 40px;
   padding-bottom: 50px
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-description h1 {
@@ -524,6 +561,18 @@ footer h3 {
   color: white;
 }
 
+.fa-home {
+  display: block;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all .25s ease-in-out;
+}
+
+.fa-home:hover {
+  color: var(--seconday-color);
+  background-color: white;
+}
+
 /*      Header       */
 header h1 {
   padding: 40px 0px;
@@ -580,6 +629,7 @@ justify-content: space-between;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  align-items: center;
 }
 
 #about h2,

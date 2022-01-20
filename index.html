@@ -36,18 +36,24 @@
 
   <nav>
     <div class="content-wrapper">
-      <ul>
-        <li><a href="#projects" class="nav-item"><i class="fas fa-code"></i> Projects</a></li>
-        <li><a href="#skills" class="nav-item"><i class="fas fa-tasks"></i> Skills</a></li>
-        <li><a href="#about" class="nav-item"><i class="fas fa-user"></i> About</a></li>
-        <li><a href="#contact" class="nav-item"> <i class="fas fa-address-card"></i> Contact</a></li>
-      </ul>
+      <div class="navbar">
+        <div class="navbarhome">
+          <a href="#header"><i class="fas fa-home"></i></a>
+        </div>
+        <div class="narbar-text"></div>
+        <ul>
+          <li><a href="#projects" class="nav-item"><i class="fas fa-code"></i> Projects</a></li>
+          <li><a href="#skills" class="nav-item"><i class="fas fa-tasks"></i> Skills</a></li>
+          <li><a href="#about" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+          <li><a href="#contact" class="nav-item"> <i class="fas fa-address-card"></i> Contact</a></li>
+        </ul> 
+      </div>
     </div>
   </nav>
 
   <!--      Header      -->
 
-  <header>
+  <header id="header">
     <div class="content-wrapper">
       <div class="header-content">
           <h1><span class="hello">Hello</span>, and <span>W</span>elcome</h1>
@@ -72,12 +78,11 @@
       </p>
 
         <div class="project-area">
-
           <!--    Repo Gallery    -->
           <article class="project-item"> 
             <figure>
               <a href="https://ayetone.github.io/github-repo-gallery/" target="_blank">
-                <img class="" src="img/repo-gallery.png" alt="Repo Gallery">
+                <img class="project-img" src="img/repo-gallery.png" alt="Repo Gallery">
               </a>  
             </figure>  
             <h3> <span>G</span>itHub <span>R</span>epo <span>G</span>allery</h3>
@@ -99,7 +104,7 @@
           <article class="project-item"> 
             <figure>
               <a href="https://6vl2y.csb.app/" target="_blank">
-                <img class="" src="img/notes.png" alt="Sticky Notes">
+                <img class="project-img" src="img/notes.png" alt="Sticky Notes">
               </a>  
             </figure>  
             <h3><span>S</span>ticky <span>N</span>otes</h3>
@@ -121,7 +126,7 @@
           <article class="project-item"> 
             <figure>
               <a class="project-link" href="https://ayetone.github.io/guess-the-word/" target="_blank">
-                <img class="" src="img/word-guess.png" alt="Guess-The-Word game" />
+                <img class="project-img" src="img/word-guess.png" alt="Guess-The-Word game" />
               </a>
             </figure>
             <h3><span>G</span>uess-<span>T</span>he-<span>W</span>ord</h3>
@@ -143,7 +148,7 @@
           <article class="project-item"> 
             <figure>
               <a href="https://ayetone.github.io/responsive-unplugged-retreat/" target="_blank">
-                <img class="" src="img/unplugged.png" alt="unplugged">
+                <img class="project-img" src="img/unplugged.png" alt="unplugged">
               </a>  
             </figure>  
             <h3><span>U</span>nPlugged</h3>
@@ -165,7 +170,7 @@
           <article class="project-item"> 
             <figure>
               <a href="https://czw9y.csb.app/" target="_blank">
-                <img class="" src="img/nametag.png" alt="Nametag UI">
+                <img class="project-img" src="img/nametag.png" alt="Nametag UI">
               </a>
             </figure>  
             <h3> <span>N</span>ametag <span>G</span>enerator</h3>
@@ -213,8 +218,13 @@
           <img class="selfie" src="img/troy-richards.png" alt="Troy Richards">
         </figure>
         <div class="about-description">
-          <h1><span>Hello</span>, I'm Troy Richards</h1>
-          <h2> I am currently looking for a position as a <span>F</span>rontend <span>D</span>eveloper.</h2>
+          <h1>
+            <span>Hello</span>, I'm Troy Richards
+          </h1>
+          <h2>
+            I am a <span>F</span>rontend <span>D</span>eveloper with experience building and designing responsive websites.
+            I am currently looking for a position as a <span>F</span>rontend <span>D</span>eveloper.
+          </h2>
           <p> 
             From a young age, I've always been a very heavy gamer. It was, and still somewhat is, 
             one of my favorite pass time activities. This hobby of mine led me to be very interested in the tech
