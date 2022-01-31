@@ -7,14 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
  
   <!-- Icon Fonts-->
 
@@ -23,7 +16,6 @@
   <!-- Google Fonts -->
 
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -37,16 +29,19 @@
   <nav>
     <div class="content-wrapper">
       <div class="navbar">
-        <div class="navbarhome">
           <a href="#header"><i class="fas fa-home"></i></a>
-        </div>
-        <div class="narbar-text"></div>
-        <ul>
-          <li><a href="#projects" class="nav-item"><i class="fas fa-code"></i> Projects</a></li>
-          <li><a href="#skills" class="nav-item"><i class="fas fa-tasks"></i> Skills</a></li>
-          <li><a href="#about" class="nav-item"><i class="fas fa-user"></i> About</a></li>
-          <li><a href="#contact" class="nav-item"> <i class="fas fa-address-card"></i> Contact</a></li>
-        </ul> 
+
+          <div class="dropdown">
+            <i onclick="show_hide()" id="ddbtn" class="dropbtn fas fa-chevron-circle-down"></i>
+            <div id="dd-content" class="dropdown-content">
+              <ul>
+                <a href="#projects" class="nav-item"><li><i class="fas fa-code"></i> Projects</li></a></a>
+                <a href="#skills" class="nav-item"><li><i class="fas fa-tasks"></i> Skills</li></a>
+                <a href="#about" class="nav-item"><li><i class="fas fa-user"></i> About</li></a>
+                <a href="#contact" class="nav-item"><li><i class="fas fa-address-card"></i> Contact</li></a>
+              </ul> 
+            </div>
+          </div>
       </div>
     </div>
   </nav>
@@ -59,7 +54,7 @@
           <h1><span class="hello">Hello</span>, and <span>W</span>elcome</h1>
           <h3> 
             My name is Troy Richards and I am a Frontend Developer that strives to make attractive 
-            websites. This is my portfolio page that I have built from the ground up. <span>Take a look!</span>
+            websites.
           </h3>
         </div>
       </div> <!--  header-content -->
@@ -72,7 +67,7 @@
 
     <section id="projects">
       <div class="content-wrapper">
-      <h2 class="projects-header">Projects</h2>
+      <h2 class="projects-header"><i class="fas fa-code"></i> Projects</h2>
       <p class="projects-subtitle">
         Just a few of the projects I have work on...
       </p>
@@ -281,10 +276,6 @@
     </div> <!--Content-wrapper end-->
   </footer>
 
-
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
