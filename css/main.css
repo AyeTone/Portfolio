@@ -124,7 +124,7 @@ nav ul li {
   text-transform: uppercase;
 }
 
-.fa-home,
+.home-btn,
 .fa-chevron-circle-down {
   color: white;
   font-size: 1.5rem;
@@ -520,7 +520,7 @@ Tablet
     color: var(--text1);
   }
   
-  .fa-home {
+  .home-btn {
     display: block;
     font-size: 1.3rem;
     border-radius: 50%;
@@ -528,7 +528,7 @@ Tablet
     transition: all .25s ease-in-out;
   }
   
-  .fa-home:hover {
+  .home-btn:hover {
     color: var(--seconday-color);
     background-color: white;
   }
@@ -719,12 +719,12 @@ Desktop
   
   ====================*/
    
-  .fa-home {
+  .home-btn {
     font-size: 1.6rem;
   }
 
   nav ul li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   
   /*======================
