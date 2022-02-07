@@ -235,7 +235,6 @@ main {
 .project-item {
   color: black;
   border-radius: 0.5rem;
-  min-height: 100%;
 }
 
 .project-img-container {
@@ -250,6 +249,7 @@ main {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   width: 100%;
+  box-shadow: 7px 1px 7px rgb(165, 165, 165);
 }
 
 
