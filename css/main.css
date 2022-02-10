@@ -794,4 +794,15 @@ Desktop
     border-radius: 0.8rem;
     width: 35%;
   }
+
+
+  /*======================
+  
+  Desktop: Footer
+  
+  ====================*/
+
+  .footer-header {
+    font-size: 2.7rem;
+  }
 }
