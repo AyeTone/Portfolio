@@ -656,6 +656,10 @@ Tablet
     align-items: center;
   }
 
+  #about > h2{
+    margin: 10rem 0;
+  }
+
   /*====================
   
   Tablet: Footer
