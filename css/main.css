@@ -143,6 +143,38 @@ nav ul li i {
   display: block;
 }
 
+.outdated {
+  width: fit-content;
+  margin: 0 auto;
+  color: white;
+  padding: 25px;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.portfolio-link {
+  color: var(--text2);
+  position: relative;
+  transition: all .4s;
+}
+
+.portfolio-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--seconday-color);
+  transition: all .2s;
+}
+
+.portfolio-link:hover::after {
+  width: 100%;
+}
+
+.portfolio-link:hover {
+  color: var(--text1);
+}
 
 /*======================
 
